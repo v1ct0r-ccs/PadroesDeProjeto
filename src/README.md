@@ -32,9 +32,9 @@ São formados por três grupos exibidos abaixo:
 Os padrões desse tipo, exigem tratamento de como os objetos (classes) são criados, para atenderem às diversas necessidades.
 
 - Factory Method
-- *Singleton*
-- *Builder*
-- *Abstract Factory*
+- ``Singleton``
+- ``Builder``
+- ``Abstract Factory``
 - Prototype
 
 #### Singleton
@@ -55,3 +55,47 @@ Fornece uma interface genérica para a construção incremental de agregações.
 
 Permite elaborar uma interface para criação de famílias de objetos relacionados ou interdependentes, que não especifica as suas classes concretas. A partir desse padrão consegue-se criar fábricas concretas, que são responsáveis pela criação de novos objetos para atender as necessidades do cliente. Portanto, essa prática ajuda a excluir a dependência entre o cliente e a classe dos objetos usados por ele.
 
+### Padrões GOF comportamentais
+
+Esses padrões, mostram o processo de como os objetos ou classes se comunicam. Em geral, buscam um baixo acompanhamento entre os objetos, apesar da comunicação que existe entre eles.
+
+- *Chain of Responsability*
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- ``Observer``
+- State
+- *Strategy*
+- ``Template Method``
+- Visitor
+
+#### Template Method
+
+Permite definir o esqueleto de um algoritimo em uma classe base e permite as subclasses subistituam todas ou algumas etapas sem alterar a estrutura geral do algoritimo.
+
+#### Observer
+
+Permite que um objeto notifique outros objetos sobre alterações em seu estado.
+
+### Padrões GOF struturais
+
+Esses padrões descrevem os seguintes aspectos: elaboração, associação e a organização entre objetos e classes/interfaces. Permitem combinar objetos em estruturas mais complexas, ou descrever como as classes são herdadas ou compostas a partir de outras.
+
+- ``Adapter``
+- Bridge
+- *Composite*
+- Decomposite
+- Decorator
+- ``Facade``
+- Flyweight
+- Proxy
+
+#### Facade
+
+Oferece uma interface unificada para um conjunto de objetos que constituem um subsistema, definindo uma interface de alto nível que facilita no uso.
+
+#### Adapter
+
+ação desse padrão converte a interface de uma classe em outra, esperada pelo objeto cliente. Através dessa conversão, permite que classes com incompatibilidade de interfaces, consigam ser adaptadas para que outros objetos possam trabalhar juntos.
